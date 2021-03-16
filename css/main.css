@@ -1,0 +1,218 @@
+/*========BASE STYLES --MOBILE ================*/
+html {
+  font-size: 16px;
+}
+.page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 767px;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+body {
+  font-family: "Quicksand", sans serif;
+  font-size: 1 em;
+  color: whitesmoke;
+  background-color: #294c60;
+}
+
+h1 {
+  font-family: "Sofia", cursive;
+  font-weight: 600;
+  font-size: 2.5em;
+  text-align: center;
+  color: #f4f7f5;
+  margin: 0;
+  padding-top: 20px;
+}
+h2,
+h3,
+p,
+a {
+  font-family: "Quicksand", sans-serif;
+  color: #f4f7f5;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1.75em;
+  text-align: center;
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.25em;
+  text-align: left;
+}
+h4 {
+  font-weight: 400;
+  font-size: 1.25em;
+  font-style: italic;
+}
+p,
+a {
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration: none;
+}
+a:hover {
+  color: #e54b4b;
+}
+a:visited {
+  color: #fe9920;
+}
+img {
+  width: 100%;
+  padding-top: 5%;
+}
+/****** HEADER ******/
+
+header {
+  background-color: black;
+}
+header p {
+  font-size: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding-left: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+header nav ul li last-child a {
+  margin-right: 0;
+}
+/****  MAIN  ****/
+.item {
+  margin: 20px;
+}
+
+/************  FORM STYLES Mobile  ******************/
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.item {
+  flex: 1;
+  margin: 10px;
+}
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form input[type="text"] {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+textarea {
+  width: 100%;
+  height: 8em;
+}
+button {
+  margin-top: 15px;
+}
+/*********** FOOTER  **************/
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+}
+footer .group {
+  display: flex;
+  flex-direction: row;
+}
+footer .item {
+  width: 30%;
+}
+footer .icon {
+  padding: 5% 30%;
+}
+/************************************************
+          TABLET STYLES
+*************************************************/
+@media only screen and (min-width: 768px) {
+  .page-wrapper {
+    margin-left: 75px;
+    margin-right: 75px;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 3.5em;
+    padding-left: 30px;
+    text-align: left;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3,
+  h4 {
+    font-size: 1.5em;
+    line-height: 150%;
+  }
+  p {
+    font-size: 1.3em;
+    line-height: 150%;
+  }
+
+  header {
+    display: flex;
+  }
+  header nav ul {
+    align-items: flex-end;
+  }
+  .item {
+    width: 45%;
+    padding-left: 10px;
+  }
+  #intro,
+  #about {
+    display: flex;
+  }
+  #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #portfolio .item {
+    width: 32%;
+    padding-bottom: 18%;
+    margin-bottom: 2%;
+  }
+  #portfolio h4 {
+    padding-bottom: 10px;
+  }
+  #portfolio img {
+    height: 300px;
+  }
+  form {
+    margin: 20px 100px;
+  }
+  form input {
+    width: 50%;
+  }
+  button {
+    margin-top: 30px;
+  }
+}
