@@ -11,7 +11,6 @@ html {
 }
 body {
   font-family: "Quicksand", sans serif;
-  font-size: 1 em;
   color: whitesmoke;
   background-color: #294c60;
 }
@@ -97,11 +96,16 @@ header nav ul li last-child a {
 }
 
 /************  FORM STYLES Mobile  ******************/
+#contact {
+  border: 2px #fe9920 solid;
+  border-radius: 10%;
+  margin-bottom: 30px;
+}
 
 .group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .item {
   flex: 1;
@@ -147,7 +151,11 @@ footer .item {
   width: 30%;
 }
 footer .icon {
-  padding: 5% 30%;
+  padding: 3% 5%;
+}
+footer .icon i {
+  padding-top: 10px;
+  padding-left: 15px;
 }
 /************************************************
           TABLET STYLES
