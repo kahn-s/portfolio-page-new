@@ -40,16 +40,21 @@ h3 {
   font-weight: 700;
   font-size: 1.25em;
   text-align: left;
+  margin: 0;
 }
 h4 {
   font-weight: 400;
   font-size: 1.25em;
   font-style: italic;
+  text-align: left;
+  margin: 0;
 }
-p,
-a {
+p {
   font-weight: 400;
   font-size: 1em;
+}
+a {
+  color: #fe9920;
   text-decoration: none;
 }
 a:hover {
@@ -60,7 +65,7 @@ a:visited {
 }
 img {
   width: 100%;
-  padding-top: 5%;
+  padding: 5% 0;
 }
 /****** HEADER ******/
 
@@ -93,6 +98,7 @@ header nav ul li last-child a {
 /****  MAIN  ****/
 .item {
   margin: 20px;
+  align-content: flex-start;
 }
 
 /************  FORM STYLES Mobile  ******************/
@@ -146,6 +152,8 @@ footer {
 footer .group {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  padding-left: 20px;
 }
 footer .item {
   width: 30%;
@@ -203,14 +211,22 @@ footer .icon i {
     display: flex;
     flex-wrap: wrap;
   }
+  #portfolio h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+  .proj-heading {
+    height: 250px;
+  }
+
   #portfolio .item {
     width: 32%;
     padding-bottom: 18%;
     margin-bottom: 2%;
   }
-  #portfolio h4 {
-    padding-bottom: 10px;
-  }
+
   #portfolio img {
     height: 300px;
   }
@@ -222,5 +238,9 @@ footer .icon i {
   }
   button {
     margin-top: 30px;
+  }
+  footer .group {
+    padding-left: 10%;
+    padding-top: 30px;
   }
 }
